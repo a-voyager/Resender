@@ -10,8 +10,8 @@ public class SmsReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // TODO: This method is called when the BroadcastReceiver is receiving
-        // an Intent broadcast.
-        throw new UnsupportedOperationException("Not yet implemented");
+        // 如果收到短信
+        if ("android.provider.Telephony.SMS_RECEIVED".equals(intent.getAction())) {
+        }
     }
 }
